@@ -44,7 +44,7 @@ Papa.parse("data/wixoss_data.csv", {
         cartes = resultats.data;
 
         afficherCartes(cartes);
-
+        suiteDuScript();
     }
 
 });
@@ -167,35 +167,39 @@ function filtrer() {
 }
 
 
-remplirListe("filtreExtension","Extension");
-remplirListe("filtreType","Card_Type");
-remplirListe("filtreCouleur","Couleur FR");
-remplirListe("filtreRarete","Card_Rarity");
-remplirListe("filtreNiveau","Card Level");
-remplirListe("filtreArchetype","Archetype_FR");
-remplirListe("filtreRestriction","Restriction");
-remplirListe("filtreTiming","Timing_FR");
-
-document
-.querySelectorAll("#zoneRecherche input, #zoneRecherche select")
-.forEach(element=>{
-
-    element.addEventListener("input", filtrer);
-
-    element.addEventListener("change", filtrer);
-
-});
-
-document.getElementById("reset").onclick=()=>{
+function suiteDuScript() {
+    
+    remplirListe("filtreExtension","Extension");
+    remplirListe("filtreType","Card_Type");
+    remplirListe("filtreCouleur","Couleur FR");
+    remplirListe("filtreRarete","Card_Rarity");
+    remplirListe("filtreNiveau","Card Level");
+    remplirListe("filtreArchetype","Archetype_FR");
+    remplirListe("filtreRestriction","Restriction");
+    remplirListe("filtreTiming","Timing_FR");
 
     document
-    .querySelectorAll("#zoneRecherche input")
-    .forEach(i=>i.value="");
+    .querySelectorAll("#zoneRecherche input, #zoneRecherche select")
+    .forEach(element=>{
 
-    document
-    .querySelectorAll("#zoneRecherche select")
-    .forEach(s=>s.selectedIndex=0);
+        element.addEventListener("input", filtrer);
 
-    filtrer();
+        element.addEventListener("change", filtrer);
 
-};
+    });
+
+    document.getElementById("reset").onclick=()=>{
+
+        document
+        .querySelectorAll("#zoneRecherche input")
+        .forEach(i=>i.value="");
+
+        document
+        .querySelectorAll("#zoneRecherche select")
+        .forEach(s=>s.selectedIndex=0);
+
+        filtrer();
+
+    };
+}
+
