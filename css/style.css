@@ -1,0 +1,50 @@
+#zoneRecherche{
+
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+}
+
+.ligneRecherche{
+
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+
+}
+
+#recherche{
+
+    flex:1;
+    padding:10px;
+    font-size:16px;
+
+}
+
+.ligneFiltres{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:10px;
+
+}
+
+select{
+
+    padding:8px;
+
+}
+
+#nbResultats{
+
+    margin-top:15px;
+    font-weight:bold;
+    color:#555;
+
+}

@@ -9,6 +9,60 @@
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <script src="js/app.js"></script>
 
+<div id="zoneRecherche">
+
+    <div class="ligneRecherche">
+
+        <input
+            type="text"
+            id="recherche"
+            placeholder="Nom, référence, effet..."
+        >
+
+        <button id="reset">Réinitialiser</button>
+
+    </div>
+
+    <div class="ligneFiltres">
+
+        <select id="filtreExtension">
+            <option value="">Toutes les extensions</option>
+        </select>
+
+        <select id="filtreType">
+            <option value="">Tous les types</option>
+        </select>
+
+        <select id="filtreCouleur">
+            <option value="">Toutes les couleurs</option>
+        </select>
+
+        <select id="filtreRarete">
+            <option value="">Toutes les raretés</option>
+        </select>
+
+        <select id="filtreNiveau">
+            <option value="">Tous les niveaux</option>
+        </select>
+
+        <select id="filtreArchetype">
+            <option value="">Tous les archétypes</option>
+        </select>
+
+        <select id="filtreRestriction">
+            <option value="">Toutes les restriction</option>
+        </select>
+
+        <select id="filtreTiming">
+            <option value="">Touts les timing</option>
+        </select>
+
+    </div>
+
+    <div id="nbResultats"></div>
+
+</div>
+
 
 <table id="listeCartes">
 
