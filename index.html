@@ -7,7 +7,7 @@
 </head>
 
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-<script src="js/app.js"></script>
+<script src="js/index.js"></script>
 
 <div id="zoneRecherche">
 
@@ -25,37 +25,102 @@
 
     <div class="ligneFiltres">
 
-        <select id="filtreExtension">
-            <option value="">Toutes les extensions</option>
-        </select>
+        <div class="champRecherche">
 
-        <select id="filtreType">
-            <option value="">Tous les types</option>
-        </select>
+            <input 
+                id="filtreExtension"
+                placeholder="Chercher une extension..."
+                autocomplete="off"
+            >
 
-        <select id="filtreCouleur">
-            <option value="">Toutes les couleurs</option>
-        </select>
+            <div id="listeExtension" class="suggestions"></div>
 
-        <select id="filtreRarete">
-            <option value="">Toutes les raretés</option>
-        </select>
+        </div>
 
-        <select id="filtreNiveau">
-            <option value="">Tous les niveaux</option>
-        </select>
+        <div class="champRecherche">
 
-        <select id="filtreArchetype">
-            <option value="">Tous les archétypes</option>
-        </select>
+            <input 
+                id="filtreType"
+                placeholder="Chercher un type..."
+                autocomplete="off"
+            >
 
-        <select id="filtreRestriction">
-            <option value="">Toutes les restriction</option>
-        </select>
+            <div id="listeType" class="suggestions"></div>
 
-        <select id="filtreTiming">
-            <option value="">Touts les timing</option>
-        </select>
+        </div>
+
+        <div class="champRecherche">
+
+            <input 
+                id="filtreCouleur"
+                placeholder="Chercher une couleurs..."
+                autocomplete="off"
+            >
+
+            <div id="listeCouleur" class="suggestions"></div>
+
+        </div>
+
+        <div class="champRecherche">
+
+            <input 
+                id="filtreRarete"
+                placeholder="Chercher une raretée..."
+                autocomplete="off"
+            >
+
+            <div id="listeRarete" class="suggestions"></div>
+
+        </div>
+
+        <div class="champRecherche">
+
+            <input 
+                id="filtreNiveau"
+                placeholder="Chercher un niveau..."
+                autocomplete="off"
+            >
+
+            <div id="listeNiveau" class="suggestions"></div>
+
+        </div>
+
+        <div class="champRecherche">
+
+            <input 
+                id="filtreArchetype"
+                placeholder="Chercher un archétype..."
+                autocomplete="off"
+            >
+
+            <div id="listeArchetype" class="suggestions"></div>
+
+        </div>
+
+        <div class="champRecherche">
+
+            <input 
+                id="filtreRestriction"
+                placeholder="Chercher une restriction..."
+                autocomplete="off"
+            >
+
+            <div id="listeRestriction" class="suggestions"></div>
+
+        </div>
+
+        <div class="champRecherche">
+
+            <input 
+                id="filtreTiming"
+                placeholder="Chercher un timing..."
+                autocomplete="off"
+            >
+
+            <div id="listeTiming" class="suggestions"></div>
+
+        </div>
+
 
     </div>
 
